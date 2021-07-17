@@ -1,0 +1,1863 @@
+:root {
+  --title: "Ubuntu", "Roboto", sans-serif;
+  --text: "Noto Sans JP", "Roboto", sans-serif;
+  --color-title: #dbdada; /*#f3f3f3;*/          /**/
+  --color-text: #dad8d8; /*#E8EAED;*/           /**/
+  --color-section-day: #292c28;                 /**/
+  --color-news: #4d4d4d;                        /**/
+  --color-body: #171717;                        /**/
+  --color-news-p: #e0dede; /*#d3d3d3*/          /**/
+  --color-news-title: #ebebeb;  /*#ebebeb*/     /**/
+  --color-anime-dw-title: #ebebeb;              /**/
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*     GENERAL     */
+
+body {
+  background-color: var(--color-body);
+  color: var(--color-title);
+  font-family: var(--title);
+  font-size: 16px;
+}
+
+h1{
+  font-family: var(--title);
+  color: var(--color-title);
+  text-transform: uppercase;
+  font-size: 25px;
+}
+
+h2 {
+  font-family: var(--title);
+  color: var(--color-title);
+}
+
+p {
+  font-family: var(--text);
+  color: var(--color-text);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*     CONTAINER BOSS      */
+.container-boss {
+  display: grid;
+  grid-template-columns: 80%;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*     CONTAINER HEADER    */
+
+.container-header {
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+  grid-template-rows: 100px;
+}
+
+/*   LOGO   */
+
+.logo {
+  align-self: center;
+  justify-self: flex-start; 
+}
+
+.logo a img{
+  width: 50%; 
+}
+
+.logo .title-logo-ak {
+  font-family: var(--title);
+  /* color: var(--color-title); */
+  font-size: 40px;
+  font-weight: bolder;
+  cursor: pointer;
+  transition: 1s ease;
+}
+
+.logo .title-logo-ak a {
+  color: #fff;
+}
+
+.logo .title-logo-ak:hover,
+.logo .title-logo-ak:active {
+  letter-spacing: 3px;
+}
+
+ 
+ 
+
+
+/*     BOTON BUSCAR     */
+
+.btn-box { 
+  align-self: center;
+  justify-self: center; /*right*/
+}
+
+.btn-box .search {
+  display: inline;
+  position: relative;
+}
+
+.btn-box .search .searchAnime{
+  height: 35px;
+  /*width: 320px;*/
+  border: none;
+  outline: none;
+  padding: 20px 40px 20px 15px;
+  border-radius: 10px;
+  background-color: var(--color-title);
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.16);
+  color: var(--color-body);
+  font-size: 16px; 
+  font-family: var(--text);
+}
+
+.btn-box .search .searchButton{
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  color: #000;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  right: 0;
+}
+
+/*  NAV (Inicio-Animes-Emisión)  */
+
+.nav-list {
+  /*background-color: burlywood;*/
+  align-self: center;
+  justify-self: flex-end; 
+}
+
+.nav-list li {
+  display: inline;
+  margin-left: 10px;
+  text-align: right;
+}
+
+.nav-list li a{
+  color: var(--color-title);
+  text-align: center;
+  font-size: 15px;
+  font-family: var(--title);
+  padding: 10px 15px;
+  border-radius: 35px;
+}
+ 
+.nav-list li a:hover{
+  background-color: #272727;
+}
+ 
+.nav-list li a:active{
+  background-color: #333232; 
+} 
+
+/*     BUSCAR     
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchAnime {
+  width: 100%;
+  height: 35px;
+  border: none;
+  outline: none;
+  padding: 20px 35px 20px 15px;
+  border-radius: 10px;
+  background-color: var(--color-title);
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.16);
+  color: var(--color-nav);
+  font-size: 16px;
+  font-family: var(--text);
+}
+
+.searchButton {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  background: transparent;
+  text-align: center;
+  color: #000;
+  cursor: pointer;
+  font-size: 20px;
+  position: relative;
+  left: -34px;
+  background-color: transparent;
+}
+
+.btn-box {
+  min-width: 21%;
+  position: absolute;
+  top: 2%;
+  left: 40%;
+}
+
+/*     LOGO     */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*     CONTAINER VIDEO     */
+.container-video {
+  /*background-color: darkcyan;*/
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+}
+
+/*   TÍTULO DE LA SECCION: CAPITULOS RECIENTES   */
+
+.container-video h1 {
+  align-self: center;
+  justify-self: flex-start;
+  font-weight: bold;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 25px;
+}
+
+.container-video h1 i {
+  color: #fb3640;
+  font-size: 25px;
+  text-align: left;
+}
+
+/*   CONTAINER VIDEO   */
+
+.container-video-links {
+  /*background-color: violet;*/
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  justify-content: center;
+  align-content: center;
+  grid-column-gap: 50px;
+  grid-row-gap: 30px;
+}
+
+.container-video-links .anime-section {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px; 
+}
+
+.container-video-links .anime-section:hover {
+  /* box-shadow: 0 8px 1px -6px rgb(68, 67, 67); */
+  box-shadow: 0 0 6px rgb(68, 67, 67);
+}
+
+.container-video-links .anime-section:active {
+  /* box-shadow: 0 8px 1px -6px rgb(53, 52, 52); */
+  box-shadow: 0 0 6px rgb(53, 52, 52);
+}
+
+.container-video-links .anime-section .anime-image-1 { 
+  /*background-color: yellowgreen;*/
+  width: 100%;
+  height: 148px;
+  text-align: center; /* agregado */
+  background-position: center; /* agregado */
+  background-image: url('../images/odd-taxi-cap12-pic1.jpg');
+  background-size: cover; 
+}
+
+.container-video-links .anime-section .anime-image-2 { 
+  /*background-color: yellowgreen;*/
+  width: 100%;
+  height: 148px;
+  text-align: center; /* agregado */
+  background-position: center; /* agregado */
+  background-image: url('../images/nagatoro-san-cap7-pic1.jpg');
+  background-size: cover; 
+}
+
+.container-video-links .anime-section .anime-image-3 { 
+  /*background-color: yellowgreen;*/
+  width: 100%;
+  height: 148px;
+  text-align: center; /* agregado */
+  background-position: center; /* agregado */
+  background-image: url('../images/dr-stone-temp2-cap1-pic1.jpg');
+  background-size: cover; 
+}
+
+.container-video-links .anime-section .anime-image-4 { 
+  /*background-color: yellowgreen;*/
+  width: 100%;
+  height: 148px;
+  text-align: center; /* agregado */
+  background-position: center; /* agregado */
+  background-image: url('../images/go-toubun-no-hayame-temp2-cap12-pic1.jpg');
+  background-size: cover; 
+}
+
+.container-video-links .anime-section .anime-image-5 { 
+  /*background-color: yellowgreen;*/
+  width: 100%;
+  height: 148px;
+  text-align: center; /* agregado */
+  background-position: center; /* agregado */
+  background-image: url('../images/yakusoku-no-neverland-cap3-pic1.jpg');
+  background-size: cover; 
+}
+
+.container-video-links .anime-section .anime-image-6 { 
+  /*background-color: yellowgreen;*/
+  width: 100%;
+  height: 148px;
+  text-align: center; /* agregado */
+  background-position: center; /* agregado */
+  background-image: url('../images/tensei-shitara-slime-datta-ken-cap20-pic1.jpg');
+  background-size: cover; 
+}
+
+.container-video-links .anime-section .anime-image-7 { 
+  /*background-color: yellowgreen;*/
+  width: 100%;
+  height: 148px;
+  text-align: center; /* agregado */
+  background-position: center; /* agregado */
+  background-image: url('../images/tonikaku-kawaii-cap9-pic1.jpg');
+  background-size: cover; 
+}
+
+.container-video-links .anime-section .anime-image-8 { 
+  /*background-color: yellowgreen;*/
+  width: 100%;
+  height: 148px;
+  text-align: center; /* agregado */
+  background-position: center; /* agregado */
+  background-image: url('../images/kyokou-suiri-cap3-pic1.jpg');
+  background-size: cover; 
+}
+
+.container-video-links .anime-section .anime-image-9 { 
+  /*background-color: yellowgreen;*/
+  width: 100%;
+  height: 148px;
+  text-align: center; /* agregado */
+  background-position: center; /* agregado */
+  background-image: url('../images/karakai-jouzu-no-takagi-san-temp2-cap3-pic1.jpg');
+  background-size: cover; 
+}
+
+.container-video-links .anime-section .anime-image-10 { 
+  /*background-color: yellowgreen;*/
+  width: 100%;
+  height: 148px;
+  text-align: center; /* agregado */
+  background-position: center; /* agregado */
+  background-image: url('../images/koi-wa-ameagari-no-you-ni-cap4-pic2.jpg');
+  background-size: cover; 
+}
+
+.container-video-links .anime-section .anime-image-11 { 
+  /*background-color: yellowgreen;*/
+  width: 100%;
+  height: 148px;
+  text-align: center; /* agregado */
+  background-position: center; /* agregado */
+  background-image: url('../images/hataraku-maou-sama-cap13-pic1.jpg');
+  background-size: cover; 
+}
+
+.container-video-links .anime-section .anime-image-12 { 
+  /*background-color: yellowgreen;*/
+  width: 100%;
+  height: 148px;
+  text-align: center; /* agregado */
+  background-position: center; /* agregado */
+  background-image: url('../images/oregairu-temp3-cap11-pic1.jpg');
+  background-size: cover; 
+}
+
+.container-video-links .anime-section .anime-image img {
+  height: 148px;
+  width: 100%;
+  background-size: cover;
+  background-position: center; /* agregado */
+  text-align: center; /* agregado */
+}
+
+.container-video-links .anime-section .anime-description { 
+  /*background-color: rgb(92, 112, 50);*/
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 10px;
+  padding: 7px 5px 0 5px;
+  color: var(--color-title);
+}
+
+.container-video-links .anime-section .anime-description p {
+  text-align: center;
+  text-transform: none;
+  font-size: 11px;
+  color: var(--color-title);
+  padding: 7px 0;
+}
+
+
+
+
+/*   VIDEO 1   */
+
+@keyframes cambioimg-1 {
+  /* diferencia de 5% entre cada img */
+  0%   {background-image: url('../images/odd-taxi-cap12-pic1.jpg');}
+  24%  {background-image: url('../images/odd-taxi-cap12-pic1.jpg');}
+  30%  {background-image: url('../images/odd-taxi-cap12-pic2.jpg');}
+  49%  {background-image: url('../images/odd-taxi-cap12-pic2.jpg');}
+  55%  {background-image: url('../images/odd-taxi-cap12-pic3.jpg');}
+  75%  {background-image: url('../images/odd-taxi-cap12-pic3.jpg');} 
+  81%  {background-image: url('../images/odd-taxi-cap12-pic4.jpg');}
+  100% {background-image: url('../images/odd-taxi-cap12-pic4.jpg');}
+}
+
+.container-video-links .anime-section .anime-image-1:hover {
+  animation-name: cambioimg-1;
+  animation-duration: 5s;
+  animation-delay: .3s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: backwards;
+}
+
+
+
+
+/*   VIDEO 2   */
+
+@keyframes cambioimg-2 {
+  /* diferencia de 5% entre cada img */
+  0%   {background-image: url('../images/nagatoro-san-cap7-pic1.jpg');}
+  24%  {background-image: url('../images/nagatoro-san-cap7-pic1.jpg');}
+  30%  {background-image: url('../images/nagatoro-san-cap7-pic2.jpg');}
+  49%  {background-image: url('../images/nagatoro-san-cap7-pic2.jpg');}
+  55%  {background-image: url('../images/nagatoro-san-cap7-pic3.jpg');}
+  75%  {background-image: url('../images/nagatoro-san-cap7-pic3.jpg');} 
+  81%  {background-image: url('../images/nagatoro-san-cap7-pic4.jpg');}
+  100% {background-image: url('../images/nagatoro-san-cap7-pic4.jpg');}
+}
+
+.container-video-links .anime-section .anime-image-2:hover {
+  animation-name: cambioimg-2;
+  animation-duration: 5s;
+  animation-delay: .3s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: backwards;
+}
+
+
+
+/*   VIDEO 3   */
+
+@keyframes cambioimg-3 {
+  /* diferencia de 5% entre cada img */
+  0%   {background-image: url('../images/dr-stone-temp2-cap1-pic1.jpg');}
+  24%  {background-image: url('../images/dr-stone-temp2-cap1-pic1.jpg');}
+  30%  {background-image: url('../images/dr-stone-temp2-cap1-pic2.jpg');}
+  49%  {background-image: url('../images/dr-stone-temp2-cap1-pic2.jpg');}
+  55%  {background-image: url('../images/dr-stone-temp2-cap1-pic3.jpg');}
+  75%  {background-image: url('../images/dr-stone-temp2-cap1-pic3.jpg');} 
+  81%  {background-image: url('../images/dr-stone-temp2-cap1-pic4.jpg');}
+  100% {background-image: url('../images/dr-stone-temp2-cap1-pic4.jpg');}
+}
+
+.container-video-links .anime-section .anime-image-3:hover {
+  animation-name: cambioimg-3;
+  animation-duration: 5s;
+  animation-delay: .3s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: backwards;
+}
+
+
+
+/*   VIDEO 4   */
+
+@keyframes cambioimg-4 {
+  /* diferencia de 5% entre cada img */
+  0%   {background-image: url('../images/go-toubun-no-hayame-temp2-cap12-pic1.jpg');}
+  24%  {background-image: url('../images/go-toubun-no-hayame-temp2-cap12-pic1.jpg');}
+  30%  {background-image: url('../images/go-toubun-no-hayame-temp2-cap12-pic4.jpg');}
+  49%  {background-image: url('../images/go-toubun-no-hayame-temp2-cap12-pic4.jpg');}
+  55%  {background-image: url('../images/go-toubun-no-hayame-temp2-cap12-pic3.jpg');}
+  75%  {background-image: url('../images/go-toubun-no-hayame-temp2-cap12-pic3.jpg');} 
+  81%  {background-image: url('../images/go-toubun-no-hayame-temp2-cap12-pic2.jpg');}
+  100% {background-image: url('../images/go-toubun-no-hayame-temp2-cap12-pic2.jpg');}
+}
+
+.container-video-links .anime-section .anime-image-4:hover {
+  animation-name: cambioimg-4;
+  animation-duration: 5s;
+  animation-delay: .3s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: backwards;
+}
+
+
+
+/*   VIDEO 5   */
+
+@keyframes cambioimg-5 {
+  /* diferencia de 5% entre cada img */
+  0%   {background-image: url('../images/yakusoku-no-neverland-cap3-pic1.jpg');}
+  24%  {background-image: url('../images/yakusoku-no-neverland-cap3-pic1.jpg');}
+  30%  {background-image: url('../images/yakusoku-no-neverland-cap3-pic2.jpg');}
+  49%  {background-image: url('../images/yakusoku-no-neverland-cap3-pic2.jpg');}
+  55%  {background-image: url('../images/yakusoku-no-neverland-cap3-pic3.jpg');}
+  75%  {background-image: url('../images/yakusoku-no-neverland-cap3-pic3.jpg');} 
+  81%  {background-image: url('../images/yakusoku-no-neverland-cap3-pic4.jpg');}
+  100% {background-image: url('../images/yakusoku-no-neverland-cap3-pic4.jpg');}
+}
+
+.container-video-links .anime-section .anime-image-5:hover {
+  animation-name: cambioimg-5;
+  animation-duration: 5s;
+  animation-delay: .3s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: backwards;
+}
+
+
+
+/*   VIDEO 6   */
+
+@keyframes cambioimg-6 {
+  /* diferencia de 5% entre cada img */
+  0%   {background-image: url('../images/tensei-shitara-slime-datta-ken-cap20-pic1.jpg');}
+  24%  {background-image: url('../images/tensei-shitara-slime-datta-ken-cap20-pic1.jpg');}
+  30%  {background-image: url('../images/tensei-shitara-slime-datta-ken-cap20-pic2.jpg');}
+  49%  {background-image: url('../images/tensei-shitara-slime-datta-ken-cap20-pic2.jpg');}
+  55%  {background-image: url('../images/tensei-shitara-slime-datta-ken-cap20-pic3.jpg');}
+  75%  {background-image: url('../images/tensei-shitara-slime-datta-ken-cap20-pic3.jpg');} 
+  81%  {background-image: url('../images/tensei-shitara-slime-datta-ken-cap20-pic4.jpg');}
+  100% {background-image: url('../images/tensei-shitara-slime-datta-ken-cap20-pic4.jpg');}
+}
+
+.container-video-links .anime-section .anime-image-6:hover {
+  animation-name: cambioimg-6;
+  animation-duration: 5s;
+  animation-delay: .3s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: backwards;
+}
+
+
+
+/*   VIDEO 7   */
+
+@keyframes cambioimg-7 {
+  /* diferencia de 5% entre cada img */
+  0%   {background-image: url('../images/tonikaku-kawaii-cap9-pic1.jpg');}
+  24%  {background-image: url('../images/tonikaku-kawaii-cap9-pic1.jpg');}
+  30%  {background-image: url('../images/tonikaku-kawaii-cap9-pic2.jpg');}
+  49%  {background-image: url('../images/tonikaku-kawaii-cap9-pic2.jpg');}
+  55%  {background-image: url('../images/tonikaku-kawaii-cap9-pic3.jpg');}
+  75%  {background-image: url('../images/tonikaku-kawaii-cap9-pic3.jpg');} 
+  81%  {background-image: url('../images/tonikaku-kawaii-cap9-pic4.jpg');}
+  100% {background-image: url('../images/tonikaku-kawaii-cap9-pic4.jpg');}
+}
+
+.container-video-links .anime-section .anime-image-7:hover {
+  animation-name: cambioimg-7;
+  animation-duration: 5s;
+  animation-delay: .3s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: backwards;
+}
+
+
+/*   VIDEO 8   */
+
+@keyframes cambioimg-8 {
+  /* diferencia de 5% entre cada img */
+  0%   {background-image: url('../images/kyokou-suiri-cap3-pic1.jpg');}
+  24%  {background-image: url('../images/kyokou-suiri-cap3-pic1.jpg');}
+  30%  {background-image: url('../images/kyokou-suiri-cap3-pic2.jpg');}
+  49%  {background-image: url('../images/kyokou-suiri-cap3-pic2.jpg');}
+  55%  {background-image: url('../images/kyokou-suiri-cap3-pic3.jpg');}
+  75%  {background-image: url('../images/kyokou-suiri-cap3-pic3.jpg');} 
+  81%  {background-image: url('../images/kyokou-suiri-cap3-pic4.jpg');}
+  100% {background-image: url('../images/kyokou-suiri-cap3-pic4.jpg');}
+}
+
+.container-video-links .anime-section .anime-image-8:hover {
+  animation-name: cambioimg-8;
+  animation-duration: 5s;
+  animation-delay: .3s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: backwards;
+}
+
+
+/*   VIDEO 9   */
+
+@keyframes cambioimg-9 {
+  /* diferencia de 5% entre cada img */
+  0%   {background-image: url('../images/karakai-jouzu-no-takagi-san-temp2-cap3-pic1.jpg');}
+  24%  {background-image: url('../images/karakai-jouzu-no-takagi-san-temp2-cap3-pic1.jpg');}
+  30%  {background-image: url('../images/karakai-jouzu-no-takagi-san-temp2-cap3-pic2.jpg');}
+  49%  {background-image: url('../images/karakai-jouzu-no-takagi-san-temp2-cap3-pic2.jpg');}
+  55%  {background-image: url('../images/karakai-jouzu-no-takagi-san-temp2-cap3-pic3.jpg');}
+  75%  {background-image: url('../images/karakai-jouzu-no-takagi-san-temp2-cap3-pic3.jpg');} 
+  81%  {background-image: url('../images/karakai-jouzu-no-takagi-san-temp2-cap3-pic4.jpg');}
+  100% {background-image: url('../images/karakai-jouzu-no-takagi-san-temp2-cap3-pic4.jpg');}
+}
+
+.container-video-links .anime-section .anime-image-9:hover {
+  animation-name: cambioimg-9;
+  animation-duration: 5s;
+  animation-delay: .3s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: backwards;
+}
+
+
+/*   VIDEO 10   */
+
+@keyframes cambioimg-10 {
+  /* diferencia de 5% entre cada img */
+  0%   {background-image: url('../images/koi-wa-ameagari-no-you-ni-cap4-pic2.jpg');}
+  24%  {background-image: url('../images/koi-wa-ameagari-no-you-ni-cap4-pic2.jpg');}
+  30%  {background-image: url('../images/koi-wa-ameagari-no-you-ni-cap4-pic1.jpg');}
+  49%  {background-image: url('../images/koi-wa-ameagari-no-you-ni-cap4-pic1.jpg');}
+  55%  {background-image: url('../images/koi-wa-ameagari-no-you-ni-cap4-pic3.jpg');}
+  75%  {background-image: url('../images/koi-wa-ameagari-no-you-ni-cap4-pic3.jpg');} 
+  81%  {background-image: url('../images/koi-wa-ameagari-no-you-ni-cap4-pic4.jpg');}
+  100% {background-image: url('../images/koi-wa-ameagari-no-you-ni-cap4-pic4.jpg');}
+}
+
+.container-video-links .anime-section .anime-image-10:hover {
+  animation-name: cambioimg-10;
+  animation-duration: 5s;
+  animation-delay: .3s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: backwards;
+}
+
+
+/*   VIDEO 11   */
+
+@keyframes cambioimg-11 {
+  /* diferencia de 5% entre cada img */
+  0%   {background-image: url('../images/hataraku-maou-sama-cap13-pic1.jpg');}
+  24%  {background-image: url('../images/hataraku-maou-sama-cap13-pic1.jpg');}
+  30%  {background-image: url('../images/hataraku-maou-sama-cap13-pic2.jpg');}
+  49%  {background-image: url('../images/hataraku-maou-sama-cap13-pic2.jpg');}
+  55%  {background-image: url('../images/hataraku-maou-sama-cap13-pic3.jpg');}
+  75%  {background-image: url('../images/hataraku-maou-sama-cap13-pic3.jpg');} 
+  81%  {background-image: url('../images/hataraku-maou-sama-cap13-pic4.jpg');}
+  100% {background-image: url('../images/hataraku-maou-sama-cap13-pic4.jpg');}
+}
+
+.container-video-links .anime-section .anime-image-11:hover {
+  animation-name: cambioimg-11;
+  animation-duration: 5s;
+  animation-delay: .3s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: backwards;
+}
+
+
+/*   VIDEO 12   */
+
+@keyframes cambioimg-12 {
+  /* diferencia de 5% entre cada img */
+  0%   {background-image: url('../images/oregairu-temp3-cap11-pic1.jpg');}
+  24%  {background-image: url('../images/oregairu-temp3-cap11-pic1.jpg');}
+  30%  {background-image: url('../images/oregairu-temp3-cap11-pic2.jpg');}
+  49%  {background-image: url('../images/oregairu-temp3-cap11-pic2.jpg');}
+  55%  {background-image: url('../images/oregairu-temp3-cap11-pic3.jpg');}
+  75%  {background-image: url('../images/oregairu-temp3-cap11-pic3.jpg');} 
+  81%  {background-image: url('../images/oregairu-temp3-cap11-pic4.jpg');}
+  100% {background-image: url('../images/oregairu-temp3-cap11-pic4.jpg');}
+}
+
+.container-video-links .anime-section .anime-image-12:hover {
+  animation-name: cambioimg-12;
+  animation-duration: 5s;
+  animation-delay: .3s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: backwards;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*   CONTAINER DIA - SEMANA   */
+
+.container-dayWeek {
+  /*background-color: rgb(197, 233, 125);*/
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: "titulo1 titulo2"
+                       "contenido1 contenido2";
+  grid-column-gap: 50px;
+  
+}
+
+.container-dayWeek i {
+  color: #fb3640;
+  font-size: 25px;
+  text-align: left;
+}
+
+.container-dayWeek .title-day {
+  /*background-color: #754648;*/
+  grid-area: titulo1;
+}
+
+.container-dayWeek .title-week {
+  /*background-color: #e5b6b8;*/
+  grid-area: titulo2;
+}
+
+.container-dayWeek .anime-day {
+  background-color: var(--color-section-day);
+  grid-area: contenido1;
+}
+
+.container-dayWeek .anime-week {
+  background-color: var(--color-section-day);
+  grid-area: contenido2;
+}
+
+.section-dw {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 30px auto auto auto; /*repeat(4, auto)*/
+  padding: 15px;
+  grid-column-gap: 15px;
+  border-radius: 5px;
+  grid-template-areas: "portada titulodw"
+                       "portada descripciondw"
+                       "portada generodw"
+                       "images images";
+}
+
+/*   PORTADA DE ANIME DEL DIA   */
+
+.img-portada {
+  grid-area: portada;
+  /*background-color: rgb(116, 136, 127);*/
+  text-align: left;
+  margin: 0 auto;
+}
+
+.img-portada img {
+  /* max-width: 280px; */
+  max-width: 100%;
+  height: 396px;
+}
+
+/*   TITULO DE ANIME DEL DIA   */
+
+.title-dw {
+  grid-area: titulodw;
+  /*background-color: rgb(130, 130, 131);*/
+  font-size: 22px;
+  text-transform: uppercase;
+  font-family: var(--title);
+  color: var(--color-anime-dw-title);
+}
+
+/*   DESCRIPCION DE ANIME DEL DIA   */
+
+.description-dw {
+  grid-area: descripciondw;
+  /*background-color: rgb(86, 86, 128);*/
+  font-size: 12px;
+  font-family: var(--text);
+  color: var(--color-text);
+  line-height: 1.7; 
+}
+
+/*   GENERO DE ANIME DEL DIA   */
+
+.genero-dw {
+  grid-area: generodw;
+  /*background-color: rgb(60, 60, 126);*/
+  font-family: var(--text);
+  color: var(--color-text);
+  font-size: 11px;
+  margin-top: 10px;
+
+  align-self: flex-start;
+  /*display: flex;
+  flex-wrap: wrap;*/
+}
+
+.genero-dw li {
+  display: inline-flex;
+}
+
+.genero-dw li a{
+  font-family: var(--text);
+  color: var(--color-text);
+  background-color: #222222;
+  padding: 6px 10px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+
+.genero-dw li a:hover {
+  background-color: var(--color-body); /*#161616*/
+}
+
+.genero-dw li a:active {
+  background-color: #222222;
+}
+
+/*   IMAGENES DE ANIME DEL DIA   */
+
+.images-dw {
+  grid-area: images;
+  margin-top: 15px;
+}
+.images-dw .container-principal {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+/*   IMAGENES DE ANIME DEL DIA - FLECHAS    */
+
+.images-dw .container-principal .left-arrow,
+.images-dw .container-principal .right-arrow {
+  text-align: center;
+  position: absolute;
+  border: none;
+  background: rgba(0, 0, 0, 0.3);
+  font-size: 40px;
+  height: 40px;
+  width: 30px;
+  color: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+  z-index: 500;
+  transition: .2s ease all;
+}
+
+.images-dw .container-principal .left-arrow {
+  left: 0;
+}
+
+.images-dw .container-principal .right-arrow {
+  right: 0;
+}
+
+.images-dw .container-principal .left-arrow:hover,
+.images-dw .container-principal .right-arrow:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+/*   IMAGENES DE ANIME DEL DIA - IMAGENES     */
+
+.images-dw .container-principal .container-carrusel {
+  width: 100%;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.images-dw .container-principal .container-carrusel .carrusel {
+  display: flex;
+  flex-wrap: nowrap;
+  
+}
+
+.images-dw .container-principal .container-carrusel .carrusel .animespic {
+  min-width: 30%;
+  transition: .3s ease all;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  margin-right: 10px;
+  
+}
+
+.images-dw .container-principal .container-carrusel .carrusel .animespic:hover {
+  transform: scale(1.2);
+  transform-origin: center;
+}
+
+.images-dw .container-principal .container-carrusel .carrusel .animespic img {
+  width: 100%;
+  vertical-align: top;
+  width: 166px; /* agregado */
+  height: 93px; /* agregado */
+  background-size: cover; /* agregado */
+  
+}
+/*
+.images-dw .container-principal .container-carrusel .carrusel .animespic a img {
+  padding-left: 10px;
+}
+
+/*
+.images-dw {
+  grid-area: images;
+  /*background-color: rgb(42, 42, 128); 
+  justify-self: center;
+  position: relative;
+  margin-top: 20px; 
+}
+
+.images-dw ul { 
+  display: inline-flex;
+  text-overflow: clip;
+  position: relative;
+}
+
+.images-dw ul li{
+  width: 200px;
+  height: 113px;
+  margin-left: 15px;
+}
+
+.images-dw ul li:first-child {
+  background: linear-gradient(90deg, var(--color-section-day), rgba(0, 0, 0, 0.7)), url('../images/pic2.jpg');
+  background-size: cover; 
+}
+.images-dw ul li:nth-of-type(2) {
+  background-image: url('../images/pic2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.images-dw ul li:nth-of-type(3) {
+  background-image: url('../images/pic2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.images-dw ul li:last-child {
+  background: linear-gradient(90deg, var(--color-section-day), rgba(0, 0, 0, 0.7)), url('../images/pic2.jpg');
+  background-size: cover;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*   CONTAINER NOTICIAS NEWS   */
+
+.container-news {
+  /*background-color: salmon;*/
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 30px;
+  justify-content: center;
+  align-content: center;
+}
+
+.container-news .titulo-new {
+  width: 100%;
+  height: 50px;
+  display: flex; 
+}
+
+.container-news .titulo-new h1 {
+  align-self: center; 
+  width: 100%;
+}
+
+/*   TITULO DE LA SECCION   */
+.container-news h1 i {
+  color: #fb3640;
+  font-size: 25px;
+  text-align: left;
+}
+
+.container-news h1 {
+  /*background-color: seagreen;*/
+  grid-column: 1 / span 3;
+  text-transform: uppercase; 
+}
+
+.container-news a {
+  color: var(--color-news-p);
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/*   NOTICIA 1   */
+
+.container-news .noticia-1 {
+  background-color: var(--color-news);
+  width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.container-news .noticia-1 h1 {
+  /*background-color: tomato;*/
+  font-size: 15px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: var(--title);
+  color: var(--color-news-title);
+}
+
+.container-news .noticia-1 .img-noticia {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.container-news .noticia-1 .img-noticia img {
+  width: 260px;
+  height: 146px;
+}
+
+.container-news .noticia-1 p {
+  /*background-color: rgb(38, 44, 44);*/
+  line-height: 1.4;
+  font-size: 13px;
+  font-family: var(--text);
+  color: var(--color-news-p);
+}
+
+/*   NOTICIA 2   */
+
+.container-news .noticia-2 {
+  background-color: var(--color-news);
+  width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.container-news .noticia-2 h1 {
+  /*background-color: tomato;*/
+  font-size: 15px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: var(--title);
+  color: var(--color-news-title);
+}
+
+.container-news .noticia-2 .img-noticia {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.container-news .noticia-2 .img-noticia img {
+  width: 260px;
+  height: 146px;
+}
+
+.container-news .noticia-2 p {
+  /*background-color: rgb(38, 44, 44);*/
+  line-height: 1.4;
+  font-size: 13px;
+  font-family: var(--text);
+
+  color: var(--color-news-p);
+}
+
+/*   NOTICIA 3   */
+
+.container-news .noticia-3 {
+  background-color: #4D4D4D;
+  width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.container-news .noticia-3 h1 {
+  /*background-color: tomato;*/
+  font-size: 15px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: var(--title);
+  color: var(--color-news-title); 
+}
+
+.container-news .noticia-3 .img-noticia {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.container-news .noticia-3 .img-noticia img {
+  width: 260px;
+  height: 146px;
+}
+
+.container-news .noticia-3 p {
+  /*background-color: rgb(38, 44, 44);*/
+  line-height: 1.4;
+  font-size: 13px;
+  font-family: var(--text);
+  color: var(--color-news-p)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*   CONTAINER FOOTER  */
+
+.footer {
+  background-color: rgba(255, 255, 255, 0.9);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 20px auto 20px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  grid-template-areas: "blanco1 blanco1 blanco1"
+                       "footer1 footer2 footer3"
+                       "blanco2 blanco2 blanco2";
+}
+
+.footer ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer ul li a:active {
+  font-weight: bold;
+}
+
+/*   ESPACIOS VACIOS   */
+
+.empty-block1 {
+  grid-area: blanco1;
+  /*background-color: #fff;*/
+}
+
+.empty-block2 {
+  grid-area: blanco2;
+  /*background-color: #fff;*/
+}
+
+/*   FOOTER 1  */
+
+.footer1 {
+  grid-area: footer1;
+  /*background-color: aliceblue;*/
+  text-align: center;
+  color: #000;
+  align-self: center;
+  justify-self: center;
+  padding: 15px;
+  font-size: 13px;
+}
+.footer1 ul li {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.footer1 ul li:last-child{
+  margin-bottom: 0;
+}
+
+.footer1 ul li a {
+  color: #000;
+}
+
+/*   FOOTER 2  */
+
+.footer2 {
+  grid-area: footer2;
+  /*background-color: rgb(166, 172, 177);*/
+  align-self: center;
+  justify-self: center;
+  border-left: 1px solid var(--color-body);
+  border-right: 1px solid var(--color-body);
+  width: 100%;
+  height: 100%;
+  display: inline-flex;
+  text-align: center;
+  font-size: 13px;
+}
+
+.footer2 ul li a {
+  color: #000;
+}
+ 
+.footer2 .ul-1 {
+  /*background-color: rgb(161, 238, 238);*/
+  width: 100%;
+  align-self: center;
+}
+
+.footer2 .ul-1 li {
+  margin-bottom: 15px;
+}
+
+.footer2 .ul-1 li:last-child {
+  margin-bottom: 0;
+}
+
+.footer2 .ul-2 {
+  /*background-color: rgb(116, 53, 106);*/
+  width: 100%;
+  align-self: center;
+}
+
+.footer2 .ul-2 li {
+  margin-bottom: 15px;
+}
+
+.footer2 .ul-2 li:last-child {
+  margin-bottom: 0;
+}
+
+/*   FOOTER 3  */
+
+.footer3 {
+  grid-area: footer3;
+  /*background-color: rgb(43, 59, 71);*/
+  align-self: center;
+  justify-self: center;
+  color: #000;
+  padding: 0 10px;
+}
+
+.footer3 .img-social {
+  text-align: center;
+}
+
+.footer3 .img-social img{
+  width: 20%;
+}
+
+.footer3 h4 {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 10px 0;
+  font-size: 13px;
+}
+
+.footer3 ul li a {
+  color: #000;
+  font-size: 30px;
+  text-align: center;
+}
+
+.footer3 ul li a:active {
+  font-weight: normal;
+}
+
+.footer3 ul {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+}
+
+.footer3 ul li {
+  display: inline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*   BARRA SCROLL   */
+
+::-webkit-scrollbar { 
+  width: 8px;
+  background-color: transparent;
+  /*display: none;*/ 
+}
+
+::-webkit-scrollbar-track { /* toda la barra*/
+  background-color: transparent; 
+}
+
+::-webkit-scrollbar-thumb { /* la barra pequeña*/
+  background-color: rgb(134, 134, 134);
+  /*background-color: var(--color-news); */
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover,
+::-webkit-scrollbar-thumb:active {
+  /*background-color: rgb(134, 134, 134); */
+  background-color: var(--color-news); 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES*/
+
+@media screen and (max-width: 1024px) {
+  .container-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "logo nav"
+               "btn btn";
+  }
+
+  .logo {
+    color: #fff;
+    grid-area: logo;
+  }
+
+  .btn-box {
+    grid-area: btn;
+  }
+
+  .btn-box .search .searchAnime{
+    width: 80vw;
+  }
+
+  .nav-list {
+    grid-area: nav;
+  }
+  
+  .container-video-links { 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    justify-content: center;
+    align-content: center;
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+  }
+
+  .container-dayWeek {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "titulo1"
+                         "contenido1"
+                         "titulo2"
+                         "contenido2";
+    grid-column-gap: 50px;
+    
+  }
+
+  .container-dayWeek .title-day {
+    grid-area: titulo1;
+  }
+  
+  .container-dayWeek .anime-day {
+    background-color: var(--color-section-day);
+    grid-area: contenido1;
+  }
+
+  .container-dayWeek .title-week {
+    grid-area: titulo2;
+  }
+  
+  .container-dayWeek .anime-week {
+    background-color: var(--color-section-day);
+    grid-area: contenido2;
+  }
+
+.img-portada {
+  grid-area: portada;
+  text-align: left;
+}
+
+.img-portada img {
+  max-width: 100%;
+  max-height: 396px;
+}
+
+/*   TITULO DE ANIME DEL DIA   */
+
+.title-dw {
+  grid-area: titulodw;
+  font-size: 22px;
+  text-transform: uppercase;
+  font-family: var(--title);
+  color: var(--color-anime-dw-title);
+}
+
+/*   DESCRIPCION DE ANIME DEL DIA   */
+
+.description-dw {
+  grid-area: descripciondw;
+  font-size: 12px;
+  font-family: var(--text);
+  color: var(--color-text);
+  line-height: 1.7; 
+}
+
+/*   GENERO DE ANIME DEL DIA   */
+
+.genero-dw {
+  grid-area: generodw;
+  font-family: var(--text);
+  color: var(--color-text);
+  font-size: 11px;
+  margin-top: 10px;
+  align-self: flex-start;
+}
+
+.genero-dw li {
+  display: inline-flex;
+}
+
+.genero-dw li a{
+  font-family: var(--text);
+  color: var(--color-text);
+  background-color: #222222;
+  padding: 6px 10px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+
+.genero-dw li a:hover {
+  background-color: var(--color-body);
+}
+
+.genero-dw li a:active {
+  background-color: #222222;
+}
+
+.title-dw {
+  height: auto;
+}
+
+.section-dw {
+  display: grid;
+  grid-template-columns: auto 495px;
+  grid-template-rows: 30px 150px 70px auto; /*repeat(4, auto)*/
+  grid-template-areas: "portada titulodw"
+                       "portada descripciondw"
+                       "portada generodw"
+                       "portada images";
+}
+
+.img-portada {
+  grid-area: portada;
+  background-color: aquamarine;
+}
+
+.anime-day .img-portada{
+  background-image: url('../images/kekkai-sensen.jpg');
+  background-size: cover;
+}
+
+.anime-week .img-portada{
+  background-image: url('../images/inuyashiki.jpg');
+  background-size: cover;
+}
+
+.img-portada img { 
+  max-width: 380px;
+  max-height: auto;
+}
+
+.title-dw {
+  grid-area: titulodw;
+}
+
+.description-dw {
+  grid-area: descripciondw;
+}
+
+.genero-dw {
+  grid-area: generodw;
+  margin: 0;
+}
+
+.images-dw {
+  grid-area: images;
+  margin: 0;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.animespic img {
+  width: 210;
+  height: 118px;
+}
+
+.images-dw .container-principal .container-carrusel .carrusel .animespic {
+  min-width: 20%;  
+  margin-right: 10px;
+
+}
+
+.images-dw .container-principal .container-carrusel .carrusel .animespic img {
+  width: 200px;
+  height: 113px;
+}
+
+
+
+
+
+
+
+/**/
+
+.images-dw .container-principal .container-carrusel {
+  width: 100%;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.images-dw .container-principal .container-carrusel .carrusel {
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  
+}
+
+.images-dw .container-principal .container-carrusel .carrusel .animespic {
+  min-width: 20%;
+  transition: .3s ease all;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  margin-right: 10px;
+  
+}
+
+.images-dw .container-principal .container-carrusel .carrusel .animespic:hover {
+  transform: scale(1.2);
+  transform-origin: center;
+}
+
+.images-dw .container-principal .container-carrusel .carrusel .animespic img {
+  width: 100%;
+  vertical-align: top;
+  width: 166px; /* agregado */
+  height: 93px; /* agregado */
+  background-size: cover; /* agregado */
+  
+}
+
+/**/
+
+
+
+/* FLECHAS */
+.images-dw .container-principal .left-arrow,
+.images-dw .container-principal .right-arrow {
+  text-align: center;
+  position: absolute;
+  border: none;
+  background: rgba(0, 0, 0, 0.3);
+  font-size: 40px;
+  height: 40px;
+  width: 30px;
+  color: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+  z-index: 500;
+  transition: .2s ease all;
+}
+
+.images-dw .container-principal .left-arrow {
+  left: 0;
+}
+
+.images-dw .container-principal .right-arrow {
+  right: 209px;
+}
+
+.images-dw .container-principal .left-arrow:hover,
+.images-dw .container-principal .right-arrow:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+/**/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container-news {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: auto;
+  grid-column-gap: 20px;
+  justify-content: center;
+  align-content: center;
+}
+
+.container-news .titulo-new {
+  height: 70px;
+}
+
+.container-news .noticia-1 .img-noticia img,
+.container-news .noticia-2 .img-noticia img,
+.container-news .noticia-3 .img-noticia img {
+  width: 225px;
+  height: 126px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+@media screen and (max-width: 768px) {
+  
+}
+
+@media screen and (max-width: 480px) {
+  
+}
+
+@media screen and (max-width: 320px) {
+  
+}
