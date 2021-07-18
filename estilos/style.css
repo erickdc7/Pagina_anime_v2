@@ -1521,6 +1521,8 @@ li {
 /* MEDIA QUERIES*/
 
 @media screen and (max-width: 1024px) {
+  /* HEADER */
+
   .container-header {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1546,6 +1548,17 @@ li {
     grid-area: nav;
   }
   
+
+
+
+
+
+
+
+
+  
+  /* VIDEOS */
+
   .container-video-links { 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1556,6 +1569,17 @@ li {
     grid-row-gap: 30px;
   }
 
+
+
+
+
+
+
+
+
+  
+  /* ANIME DEL DIA/SEMANA */
+
   .container-dayWeek {
     display: grid;
     grid-template-columns: 1fr;
@@ -1565,7 +1589,6 @@ li {
                          "titulo2"
                          "contenido2";
     grid-column-gap: 50px;
-    
   }
 
   .container-dayWeek .title-day {
@@ -1586,217 +1609,156 @@ li {
     grid-area: contenido2;
   }
 
-.img-portada {
-  grid-area: portada;
-  text-align: left;
-}
+  .img-portada {
+    grid-area: portada;
+    text-align: left;
+  }
 
-.img-portada img {
-  max-width: 100%;
-  max-height: 396px;
-}
+  .img-portada img {
+    max-width: 100%;
+    max-height: 396px;
+  }
 
-/*   TITULO DE ANIME DEL DIA   */
+  /*   TITULO DE ANIME DEL DIA   */
 
-.title-dw {
-  grid-area: titulodw;
-  font-size: 22px;
-  text-transform: uppercase;
-  font-family: var(--title);
-  color: var(--color-anime-dw-title);
-}
+  .title-dw {
+    grid-area: titulodw;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-family: var(--title);
+    color: var(--color-anime-dw-title);
+  }
 
-/*   DESCRIPCION DE ANIME DEL DIA   */
+  /*   DESCRIPCION DE ANIME DEL DIA   */
 
-.description-dw {
-  grid-area: descripciondw;
-  font-size: 12px;
-  font-family: var(--text);
-  color: var(--color-text);
-  line-height: 1.7; 
-}
+  .description-dw {
+    grid-area: descripciondw;
+    font-size: 12px;
+    font-family: var(--text);
+    color: var(--color-text);
+    line-height: 1.7; 
+  }
 
-/*   GENERO DE ANIME DEL DIA   */
+  /*   GENERO DE ANIME DEL DIA   */
 
-.genero-dw {
-  grid-area: generodw;
-  font-family: var(--text);
-  color: var(--color-text);
-  font-size: 11px;
-  margin-top: 10px;
-  align-self: flex-start;
-}
+  .genero-dw {
+    grid-area: generodw;
+    font-family: var(--text);
+    color: var(--color-text);
+    font-size: 11px;
+    margin-top: 10px;
+    align-self: flex-start;
+  }
 
-.genero-dw li {
-  display: inline-flex;
-}
+  .genero-dw li {
+    display: inline-flex;
+  }
 
-.genero-dw li a{
-  font-family: var(--text);
-  color: var(--color-text);
-  background-color: #222222;
-  padding: 6px 10px;
-  border-radius: 10px;
-  text-align: center;
-  margin-bottom: 5px;
-  margin-right: 5px;
-}
+  .genero-dw li a{
+    font-family: var(--text);
+    color: var(--color-text);
+    background-color: #222222;
+    padding: 6px 10px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-right: 5px;
+  }
 
-.genero-dw li a:hover {
-  background-color: var(--color-body);
-}
+  .genero-dw li a:hover {
+    background-color: var(--color-body);
+  }
 
-.genero-dw li a:active {
-  background-color: #222222;
-}
+  .genero-dw li a:active {
+    background-color: #222222;
+  }
 
-.title-dw {
-  height: auto;
-}
+  .title-dw {
+    height: auto;
+  }
 
-.section-dw {
-  display: grid;
-  grid-template-columns: auto 495px;
-  grid-template-rows: 30px 150px 70px auto; /*repeat(4, auto)*/
-  grid-template-areas: "portada titulodw"
-                       "portada descripciondw"
-                       "portada generodw"
-                       "portada images";
-}
+  .section-dw {
+    display: grid;
+    grid-template-columns: auto 495px;
+    grid-template-rows: 30px 150px 70px auto; /*repeat(4, auto)*/
+    grid-template-areas: "portada titulodw"
+                        "portada descripciondw"
+                        "portada generodw"
+                        "portada images";
+  }
 
-.img-portada {
-  grid-area: portada;
-  background-color: aquamarine;
-}
+  .img-portada {
+    grid-area: portada;
+    background-color: aquamarine;
+  }
 
-.anime-day .img-portada{
-  background-image: url('../images/kekkai-sensen.jpg');
-  background-size: cover;
-}
+  .anime-day .img-portada{
+    background-image: url('../images/kekkai-sensen.jpg');
+    background-size: cover;
+  }
 
-.anime-week .img-portada{
-  background-image: url('../images/inuyashiki.jpg');
-  background-size: cover;
-}
+  .anime-week .img-portada{
+    background-image: url('../images/inuyashiki.jpg');
+    background-size: cover;
+  }
 
-.img-portada img { 
-  max-width: 380px;
-  max-height: auto;
-}
+  .img-portada img { 
+    max-width: 380px;
+    max-height: auto;
+  }
 
-.title-dw {
-  grid-area: titulodw;
-}
+  .title-dw {
+    grid-area: titulodw;
+  }
 
-.description-dw {
-  grid-area: descripciondw;
-}
+  .description-dw {
+    grid-area: descripciondw;
+  }
 
-.genero-dw {
-  grid-area: generodw;
-  margin: 0;
-}
+  .genero-dw {
+    grid-area: generodw;
+    margin: 0;
+  }
 
-.images-dw {
-  grid-area: images;
-  margin: 0;
-  display: flex;
-  align-items: flex-end;
-  overflow: hidden;
-}
+  .images-dw {
+    grid-area: images;
+    margin: 0;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+  }
 
-.animespic img {
-  width: 210;
-  height: 118px;
-}
+  .animespic img {
+    width: 210;
+    height: 118px;
+  }
 
-.images-dw .container-principal .container-carrusel .carrusel .animespic {
-  min-width: 20%;  
-  margin-right: 10px;
+  .images-dw .container-principal .container-carrusel .carrusel .animespic {
+    min-width: 20%;  
+    margin-right: 10px;
 
-}
+  }
 
-.images-dw .container-principal .container-carrusel .carrusel .animespic img {
-  width: 200px;
-  height: 113px;
-}
+  .images-dw .container-principal .container-carrusel .carrusel .animespic img {
+    width: 200px;
+    height: 113px;
+  }
 
+  .images-dw .container-principal .container-carrusel .carrusel {
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+  }
 
+  .images-dw .container-principal .container-carrusel .carrusel .animespic {
+    min-width: 20%;
+  }
 
-
-
-
-
-/**/
-
-.images-dw .container-principal .container-carrusel {
-  width: 100%;
-  overflow: hidden;
-  scroll-behavior: smooth;
-}
-
-.images-dw .container-principal .container-carrusel .carrusel {
-  display: flex;
-  align-items: flex-end;
-  overflow: hidden;
+  /* FLECHAS */
   
-}
-
-.images-dw .container-principal .container-carrusel .carrusel .animespic {
-  min-width: 20%;
-  transition: .3s ease all;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-  margin-right: 10px;
-  
-}
-
-.images-dw .container-principal .container-carrusel .carrusel .animespic:hover {
-  transform: scale(1.2);
-  transform-origin: center;
-}
-
-.images-dw .container-principal .container-carrusel .carrusel .animespic img {
-  width: 100%;
-  vertical-align: top;
-  width: 166px; /* agregado */
-  height: 93px; /* agregado */
-  background-size: cover; /* agregado */
-  
-}
-
-/**/
-
-
-
-/* FLECHAS */
-.images-dw .container-principal .left-arrow,
-.images-dw .container-principal .right-arrow {
-  text-align: center;
-  position: absolute;
-  border: none;
-  background: rgba(0, 0, 0, 0.3);
-  font-size: 40px;
-  height: 40px;
-  width: 30px;
-  color: rgba(255, 255, 255, 0.9);
-  cursor: pointer;
-  z-index: 500;
-  transition: .2s ease all;
-}
-
-.images-dw .container-principal .left-arrow {
-  left: 0;
-}
-
-.images-dw .container-principal .right-arrow {
-  right: 209px;
-}
-
-.images-dw .container-principal .left-arrow:hover,
-.images-dw .container-principal .right-arrow:hover {
-  background: rgba(0, 0, 0, 0.9);
-}
-/**/
+  .images-dw .container-principal .right-arrow {
+    right: 209px;
+  }
 
 
 
@@ -1807,55 +1769,270 @@ li {
 
 
 
+  /* NOTICIAS*/
 
+  .container-news {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: auto;
+    grid-column-gap: 20px;
+  }
 
+  .container-news .titulo-new {
+    height: 70px;
+  }
 
-
-
-
-
-
-
-
-.container-news {
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  grid-template-rows: auto;
-  grid-column-gap: 20px;
-  justify-content: center;
-  align-content: center;
-}
-
-.container-news .titulo-new {
-  height: 70px;
-}
-
-.container-news .noticia-1 .img-noticia img,
-.container-news .noticia-2 .img-noticia img,
-.container-news .noticia-3 .img-noticia img {
-  width: 225px;
-  height: 126px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
+  .container-news .noticia-1 .img-noticia img,
+  .container-news .noticia-2 .img-noticia img,
+  .container-news .noticia-3 .img-noticia img {
+    width: 225px;
+    height: 126px;
+  }
 }
 
 @media screen and (max-width: 768px) {
+  /* HEADER */
+  .container-boss {
+    grid-template-columns: 90%;
+  }
+  .btn-box .search .searchAnime {
+    width: 90vw;
+  }
+
+  /* VIDEOS */
+  .container-video-links .anime-section .anime-image-1,
+  .container-video-links .anime-section .anime-image-2,
+  .container-video-links .anime-section .anime-image-3,
+  .container-video-links .anime-section .anime-image-4,
+  .container-video-links .anime-section .anime-image-5,
+  .container-video-links .anime-section .anime-image-6,
+  .container-video-links .anime-section .anime-image-7,
+  .container-video-links .anime-section .anime-image-8,
+  .container-video-links .anime-section .anime-image-9,
+  .container-video-links .anime-section .anime-image-10,
+  .container-video-links .anime-section .anime-image-11,
+  .container-video-links .anime-section .anime-image-12 {
+    width: 100%;
+    height: 117px;
+  }
+
+  /*ANIME DEL DIA/SEMANA*/
+
+  .section-dw {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 30px 200px 70px auto;
+    grid-template-areas:
+        "portada titulodw"
+        "portada descripciondw"
+        "portada generodw"
+        "portada images";
+  }
+
+  .images-dw .container-principal .container-carrusel .carrusel .animespic img {
+    width: 131px;
+    height: 74px;
+  }
+
+  .images-dw .container-principal .right-arrow {
+    right: 198px;
+  }
+
+  /*NOTICIAS*/
   
+  .container-news .noticia-1 .img-noticia img, 
+  .container-news .noticia-2 .img-noticia img, 
+  .container-news .noticia-3 .img-noticia img {
+    width: 148px;
+    height: 83px;
+  }
 }
 
 @media screen and (max-width: 480px) {
-  
+  /* HEADER */
+  .container-header {
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:"logo"
+                        "nav"
+                        "btn";
+  }
+  .logo {
+    grid-area: logo;
+    justify-self: center;
+  }
+  .nav-list {
+    grid-area: nav; 
+    justify-self: center;
+    margin-bottom: 15px;
+  }
+  .btn-box {
+    grid-area: btn;
+  }
+
+  /* VIDEOS */  
+  .container-video-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    justify-content: center;
+    align-content: center;
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+  }
+
+  .container-video-links .anime-section .anime-image-1,
+  .container-video-links .anime-section .anime-image-2,
+  .container-video-links .anime-section .anime-image-3,
+  .container-video-links .anime-section .anime-image-4,
+  .container-video-links .anime-section .anime-image-5,
+  .container-video-links .anime-section .anime-image-6,
+  .container-video-links .anime-section .anime-image-7,
+  .container-video-links .anime-section .anime-image-8,
+  .container-video-links .anime-section .anime-image-9,
+  .container-video-links .anime-section .anime-image-10,
+  .container-video-links .anime-section .anime-image-11,
+  .container-video-links .anime-section .anime-image-12 {
+    width: 100%;
+    height: 106px;
+  }
+
+  /* ANIME DEL DIA/SEMANA */
+  .section-dw {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 20px 180px auto auto;
+    grid-template-areas:
+        "portada titulodw"
+        "portada descripciondw"
+        "generodw generodw"
+        "images images";
+  }
+
+  .img-portada {
+    grid-area: portada;
+  }
+  .title-dw {
+    grid-area: titulodw;
+    font-size: 15px;
+  }
+  .description-dw {
+    grid-area: descripciondw;
+    font-size: 10px;
+  }
+  .genero-dw {
+    grid-area: generodw;
+  }
+  .images-dw{
+    grid-area: images;
+    margin-top: 15px;
+  }
+
+  .img-portada img {
+    max-width: 112px;
+    height: auto;
+  }
+
+  .anime-day .img-portada,
+  .anime-week .img-portada {
+    background-image: none;
+    background-size: cover;
+    background-color: transparent;
+  }
+
+  .images-dw .container-principal .container-carrusel .carrusel .animespic img {
+    width: 110px;
+    height: 62px;
+  }
+  .images-dw .container-principal .right-arrow {
+    right: 78px;
+  }
+
+  /* NOTICIAS */
+  .container-news {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, auto);
+  } 
+
+  .title-day {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+    margin-top: 0;
+  }
+
+  .noticia-1 {
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+    margin-bottom: 20px;
+  }
+
+  .noticia-2 {
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+    margin-bottom: 20px;
+  }
+
+  .noticia-3 {
+    grid-column: 1 / 4;
+    grid-row: 4 / 5;
+  }
+
+  .container-news .noticia-1 .img-noticia,
+  .container-news .noticia-2 .img-noticia,
+  .container-news .noticia-3 .img-noticia {
+    text-align: center;
+    margin: auto 0;
+    float: left;
+    width: auto;
+  }
+
+  .container-news .noticia-1 p,
+  .container-news .noticia-2 p,
+  .container-news .noticia-3 p {
+    font-size: 10px;  
+    width: 51%;
+    float: right;
+    margin-left: 15px;
+  }
+
+  .container-news .noticia-1 .img-noticia img, 
+  .container-news .noticia-2 .img-noticia img, 
+  .container-news .noticia-3 .img-noticia img {
+    width: 181px;
+    height: 102px;
+  }
+
+  .container-news .titulo-new {
+    height: auto;
+  } 
+ 
+  .container-news .titulo-new h1 {
+    margin: 0 0 15px 0;
+  }
+
+  .container-news a {
+    color: var(--color-news-p);
+    font-size: 10px;
+    font-weight: bold;
+  }
+
+  /* FOOTER */
+  .footer1,
+  .footer2 {
+    font-size: 8px;
+  } 
+  .footer3 h4{
+    font-size: 11px;
+  }
+  .footer3 .img-social img {
+    width: 35%;
+  }
+  .footer3 ul li a {
+    font-size: 20px;
+  } 
+
 }
 
 @media screen and (max-width: 320px) {
