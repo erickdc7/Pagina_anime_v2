@@ -2036,5 +2036,238 @@ li {
 }
 
 @media screen and (max-width: 320px) {
-  
+  /* HEADER */
+  .container-boss {
+    grid-template-columns: 95%;
+  }
+  .btn-box .search .searchAnime {
+    width: 95vw;
+  } 
+  .nav-list {
+    width: 100%;
+    display: flex; 
+    justify-content: center;
+  }
+  .nav-list li {
+    margin-left: 0;
+  }
+
+  /* VIDEOS */
+  .container-video h1,
+  .container-video h1 i{
+    font-size: 20px;
+  }
+
+  .container-video-links .anime-section .anime-image-1,
+  .container-video-links .anime-section .anime-image-2,
+  .container-video-links .anime-section .anime-image-3, 
+  .container-video-links .anime-section .anime-image-4, 
+  .container-video-links .anime-section .anime-image-5, 
+  .container-video-links .anime-section .anime-image-6, 
+  .container-video-links .anime-section .anime-image-7, 
+  .container-video-links .anime-section .anime-image-8, 
+  .container-video-links .anime-section .anime-image-9, 
+  .container-video-links .anime-section .anime-image-10, 
+  .container-video-links .anime-section .anime-image-11, 
+  .container-video-links .anime-section .anime-image-12 {
+    width: 100%;
+    height: 78px;
+  }
+
+  .anime-section .anime-description h2 {
+    font-size: 12px;
+  }
+
+  .anime-section .anime-description p {
+    font-size: 9px;
+  }
+
+  .container-video-links {
+    grid-column-gap: 15px;
+    grid-row-gap: 20px;
+  }
+
+  /* ANIME DEL DIA/SEMANA */
+
+  .title-day {
+    font-size: 20px;
+  }
+  .title-day i {
+    font-size: 20px;
+  }
+
+  .title-week {
+    font-size: 20px;
+  }
+  .title-week i {
+    font-size: 20px;
+  }
+
+  .section-dw {
+    display: grid;
+    grid-template-columns: 112px auto;
+    grid-template-rows: 20px 150px auto auto;
+    grid-template-areas:
+        "portada titulodw"
+        "portada descripciondw"
+        "generodw descripciondw"
+        "images images";
+    padding: 10px;
+    grid-column-gap: 10px;
+  }
+
+  .img-portada {
+    grid-area: portada;
+  }
+
+  .title-dw {
+    grid-area: titulodw;
+  }
+
+  .description-dw {
+    grid-area: descripciondw;
+  }
+
+  .genero-dw {
+    grid-area: generodw;
+  }
+
+  .images-dw {
+    grid-area: images;
+  }
+
+  .genero-dw li a {
+    font-size: 8px;
+    margin-right: 2px;
+    padding: 6px 9px;
+  }
+
+  .images-dw .container-principal .container-carrusel .carrusel .animespic img {
+    width: 70px;
+    height: 39px;
+  }
+
+  .images-dw .container-principal .left-arrow, 
+  .images-dw .container-principal .right-arrow {
+    font-size: 20px;
+    height: 20px;
+    width: 15px;
+  }
+
+  .images-dw .container-principal .right-arrow {
+    right: 36px;
+  }
+
+  /* NOTICIAS */
+  .container-news .title-day i{
+    font-size: 20px;
+  }
+
+  .container-news .noticia-1 p, 
+  .container-news .noticia-2 p, 
+  .container-news .noticia-3 p {
+    font-size: 10px;
+    width: 100%;
+    float: none;
+    margin-left: 0;
+  }
+
+  .container-news .noticia-1 .img-noticia, 
+  .container-news .noticia-2 .img-noticia, 
+  .container-news .noticia-3 .img-noticia {
+    text-align: center;
+    margin: 0;
+    float: none;
+    width: auto;
+    margin: 7px 0;
+  }
+
+  .container-news .titulo-new h1 {
+    margin: 0;
+  }
+
+  .container-news .noticia-1,
+  .container-news .noticia-2,
+  .container-news .noticia-3 {
+    padding: 10px;
+  }
+
+  .container-news .noticia-1 h1,
+  .container-news .noticia-2 h1,
+  .container-news .noticia-3 h1 {
+    font-size: 13px;
+  }
+
+  /* FOOTER */
+
+  .footer {
+    background-color: rgba(255, 255, 255, 0.9);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 10px auto auto 10px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    grid-template-areas:
+        "blanco1 blanco1"
+        "footer1 footer2"
+        "footer3 footer3"
+        "blanco2 blanco2";
+  }
+
+  .empty-block1 {
+    grid-area: blanco1;
+  }
+
+  .empty-block2 {
+    grid-area: blanco2;
+  }
+
+  .footer1 {
+    grid-area: footer1;
+  }
+
+  .footer2 {
+    grid-area: footer2;
+    border-right: none;
+  }
+
+  .footer3 {
+    margin-top: 10px; 
+    grid-area: footer3;
+    display: flex;
+    align-items: center;
+    align-content: space-between
+  }
+
+  .footer3 .img-social img {
+    width: 100%;
+  }
+
+  .footer3 .img-social {
+    display: inline;
+    height: 40px;
+    width: 40px;
+  }
+
+  .footer3 h4 {
+    display: inline;
+    margin: 0 10px;
+    font-size: 11px;
+  }
+
+  .footer3 ul {
+    text-align: center;
+    display: inline;
+  }
+
+  .footer3 ul li {
+    margin-right: 10px;
+  }
+
+  .footer3 ul li:last-child {
+    margin-right: 0;
+  }
+
+
+
 }
