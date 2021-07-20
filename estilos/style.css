@@ -1019,10 +1019,8 @@ li {
 
 .images-dw .container-principal .container-carrusel .carrusel .animespic {
   min-width: 30%;
-  transition: .3s ease all;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  transition: .3s ease all; 
   margin-right: 10px;
-  
 }
 
 .images-dw .container-principal .container-carrusel .carrusel .animespic:hover {
@@ -1756,10 +1754,12 @@ li {
 
   /* FLECHAS */
   
-  .images-dw .container-principal .right-arrow {
-    right: 209px;
+  .anime-day .images-dw .container-principal .right-arrow {
+    right: 555px;
   }
-
+  .anime-week .images-dw .container-principal .right-arrow {
+    right: 345px;
+  }
 
 
 
@@ -1834,7 +1834,10 @@ li {
     height: 74px;
   }
 
-  .images-dw .container-principal .right-arrow {
+  .anime-day .images-dw .container-principal .right-arrow {
+    right: 198px;
+  }
+  .anime-week .images-dw .container-principal .right-arrow {
     right: 198px;
   }
 
@@ -1945,7 +1948,8 @@ li {
     width: 110px;
     height: 62px;
   }
-  .images-dw .container-principal .right-arrow {
+  .anime-day .images-dw .container-principal .right-arrow,
+  .anime-week .images-dw .container-principal .right-arrow {
     right: 78px;
   }
 
@@ -2154,8 +2158,15 @@ li {
     width: 15px;
   }
 
-  .images-dw .container-principal .right-arrow {
-    right: 36px;
+  .images-dw .container-principal .container-carrusel .carrusel .animespic {
+    margin-right: 2px;
+  }
+
+  .anime-day .images-dw .container-principal .right-arrow {
+    right: 4px;
+  }
+  .anime-week .images-dw .container-principal .right-arrow {
+    right: 4px;
   }
 
   /* NOTICIAS */
