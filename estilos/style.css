@@ -975,6 +975,17 @@ li {
 
 /*   IMAGENES DE ANIME DEL DIA - FLECHAS    */
 
+#flecha-izquierda,
+#flecha-derecha,
+#flecha-izquierda2,
+#flecha-derecha2 { 
+  border: none;
+} 
+
+#ultimapic1 {
+ margin-left: 1px;
+}
+
 .images-dw .container-principal .left-arrow,
 .images-dw .container-principal .right-arrow {
   text-align: center;
@@ -988,6 +999,7 @@ li {
   cursor: pointer;
   z-index: 500;
   transition: .2s ease all;
+  margin-top: -19px;
 }
 
 .images-dw .container-principal .left-arrow {
